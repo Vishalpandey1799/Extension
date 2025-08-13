@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summerizer</title>
+</head>
+ 
+<style>
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background-color: #f8f9fa;
+    width: 500px;
+}
+
+#options {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+select, button {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    background-color: #fff;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    height:300px;
+}
+</style>
+
+ 
+<body>
+
+    <div id="options">
+     <select id="summary-type">
+        <option value="brief">Brief</option>
+        <option value="detailed">Detailed</option>
+        <option value="bullet-point">Bullet Point</option>
+     </select>
+
+     <button id="summerizer">Summarize</button>
+     <button id="copy-btn">Copy</button>
+    </div>
+ 
+
+    <pre id="result">
+        Select a type and click summarize...
+    </pre>
+
+    <script src="popup.js"></script>
+   
+</body>
+</html> 
